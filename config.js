@@ -1,5 +1,5 @@
 //MongoDB database
 module.exports = {
-	'secret':'thisismysecretbyschotch',
-	'database':'mongodb://noder:noderauth&54;proximus.modulusmongo.net:27017/so9pojyN'
+	'secret':'secretsecret',
+	'database':'mongodb://niksolaz:socrate1976@waffle.modulusmongo.net:27017/mu9heZum'
 };

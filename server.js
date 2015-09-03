@@ -16,7 +16,7 @@ mongoose.connect(config.database); // connect database with config.js
 app.set('superSecret',config.secret); //secret variable
 
 //use body parser so we can get info from post and/or url parameters
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //use morgan to log requests to the console
@@ -24,8 +24,8 @@ app.use(morgan('dev'));
 
 //basic route
 app.get('/',function(req,res){
-	res.send('The API is at http://localhost:'+port+'/api');
+	res.send('The API is at http://localhost:'+ port + '/api');
 });
 
 app.listen(port);
-console.log('Magic happens at http://localhost:'+port);
+console.log('Magic happens at http://localhost:'+ port);
