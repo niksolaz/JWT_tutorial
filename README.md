@@ -7,12 +7,12 @@ Used Node NPM  and Express with Postman.
 
 file structure:
 
-app/
-....models/
-..........user.js
-confing.js
-package.json
-server.js
+- app/
+- ....models/
+- ..........user.js
+- confing.js
+- package.json
+- server.js
 -------------------------------------------
 
 Create your package with:
@@ -24,8 +24,8 @@ npm init
 Set package.json with:
 
 {
-	"name":"node-token-jwt"
-	"main": "server.js"
+-	"name":"node-token-jwt"
+-	"main": "server.js"
 }
 
 ---------------------------------------------
