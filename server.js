@@ -27,5 +27,23 @@ app.get('/',function(req,res){
 	res.send('The API is at http://localhost:'+ port + '/api');
 });
 
+//path for a sample user
+app.get('/setup',function(req,res){
+	//create sample user
+	var nick = new User({
+		name: 'Nick Manofredda',
+		password: 'password',
+		admin:true
+	});
+
+	//save user
+	nick.save(function(err){
+		if(err) throw err;
+
+		console.log('User saved successfully');
+		res.json({ success: true });
+	});
+});
+
 app.listen(port);
 console.log('Magic happens at http://localhost:'+ port);
